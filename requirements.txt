@@ -1,0 +1,3 @@
+streamlit
+pandas
+pyarrow  # 用于读取 parquet 文件
