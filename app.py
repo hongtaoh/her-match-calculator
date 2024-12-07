@@ -1,12 +1,20 @@
-import streamlit as st
+import os
 import pandas as pd
 import json
+import streamlit as st
 
-# UI组件
-@st.cache_data 
+@st.cache_data
 def load_data():
-    data = pd.read_parquet("data/data_numeric.parquet")
-    with open('data/mappings.json', "r", encoding="utf-8") as f:
+    # Get the directory of the current script
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    
+    # Construct absolute paths to the files
+    data_path = os.path.join(current_dir, "data/data_numeric.parquet")
+    mappings_path = os.path.join(current_dir, "data/mappings.json")
+    
+    # Load the data
+    data = pd.read_parquet(data_path)
+    with open(mappings_path, "r", encoding="utf-8") as f:
         mappings = json.load(f)
     return data, mappings
 
