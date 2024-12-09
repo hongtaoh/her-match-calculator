@@ -23,11 +23,7 @@ def add_scoring_reference():
     content = """
     <div style="background-color: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 1rem 0;">
         <h3 style="color: #333; font-size: 1.5rem;">评分参考标准</h3>
-        <h4 style="color: #444; font-size: 1.2rem;">颜值评分参考</h4>
-        <p style="color: #666;">3分：普通水平（参考：黄渤）</p>
-        <p style="color: #666;">4分：较高水平（参考：胡歌）</p>
-        <p style="color: #666;">5分：顶级水平（参考：吴彦祖、彭于晏）</p>
-        <h4 style="color: #444; font-size: 1.2rem;">性吸引力评分参考</h4>
+        <h4 style="color: #444; font-size: 1.2rem;">颜值、性吸引力评分参考</h4>
         <p style="color: #666;">3分：普通水平（参考：黄渤）</p>
         <p style="color: #666;">4分：较高水平（参考：胡歌）</p>
         <p style="color: #666;">5分：顶级水平（参考：吴彦祖、彭于晏）</p>
